@@ -81,3 +81,52 @@ header a:hover{
     color: #50fa7b;
     transition: color 1000ms ;
 }
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 20px;
+    
+}
+
+.card {
+    background-color: #50fa7b;
+    border: 3px solid #50fa7b;
+    border-radius: 20px;
+}
+
+
+.card_img img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.card_conteudo{
+    text-align: center;
+}
+
+.card_conteudo,
+.card_info{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 24px;
+}
+
+.card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card_link {
+    background-color: #50fa7b;
+    filter: brightness(90%);
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 20px;
+
+}
+
