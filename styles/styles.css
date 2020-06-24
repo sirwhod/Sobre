@@ -82,6 +82,7 @@ header a:hover{
     transition: color 1000ms ;
 }
 
+/*--- Cards ---*/
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -95,6 +96,7 @@ header a:hover{
     background-color: #50fa7b;
     border: 3px solid #50fa7b;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 
@@ -107,6 +109,7 @@ header a:hover{
 
 .card_conteudo{
     text-align: center;
+    
 }
 
 .card_conteudo,
@@ -133,3 +136,48 @@ header a:hover{
     color: #282a36;
 }
 
+/*--- Modal ---*/
+
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-image:  linear-gradient(90deg,#282a36ef, #1a1c24ef );
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+    border: 5px solid #50fa7b;
+    border-radius:25px;
+    color: white;
+}
+
+.modal .close-modal {
+    color: #50fa7b;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    cursor: pointer;
+}
+
+/*--- Modal Ativo ---*/
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    text-align: center;
+    font-size: 100px;
+    margin:25% 0;
+    filter: brightness(30%);
+}
