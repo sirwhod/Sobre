@@ -99,6 +99,7 @@ header a:hover{
 
 
 .card_img img {
+    max-height: 144px;
     width: 100%;
     border-radius: 20px 20px 0 0;
 
@@ -110,6 +111,7 @@ header a:hover{
 
 .card_conteudo,
 .card_info{
+    font-size: 15px;
     font-weight: bold;
     color: rgb(255, 255, 255);
     padding: 24px;
@@ -121,6 +123,7 @@ header a:hover{
 }
 
 .card_link {
+    font-size: 13px;
     background-color: #50fa7b;
     filter: brightness(90%);
     border-radius: 15px;
