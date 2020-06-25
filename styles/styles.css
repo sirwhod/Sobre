@@ -181,9 +181,7 @@ header a:hover{
 
 .modal-content {
     text-align: center;
-    font-size: 100px;
-    margin:25% 0;
-    filter: brightness(30%);
+    padding: 10%;
 }
 
 @supports ((backdrop-filter: blur(20px) saturate(100%)) || (backdrop-filter: blur(20px) saturate(100%))) {
