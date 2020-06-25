@@ -1,0 +1,32 @@
+@media only screen and (max-device-width: 900px) {
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr ;
+        width: 500px;
+    }
+
+    .card {
+        height: 600px;
+
+
+    }
+
+    .card_img img {
+        max-height: 287px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    
+    }
+    .card_conteudo,
+    .card_info{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .card_link{
+        padding: 20px;
+        font-size: 25px;
+    }
+}
+    

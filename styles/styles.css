@@ -147,6 +147,10 @@ header a:hover{
     top: 0;
     opacity: 0;
     visibility: hidden;
+
+    background-color: #11111140;
+    backdrop-filter: blur(20px) saturate(100%);
+    -webkit-backdrop-filter: blur(20px) saturate(100%);
 }
 
 .modal {
@@ -180,4 +184,12 @@ header a:hover{
     font-size: 100px;
     margin:25% 0;
     filter: brightness(30%);
+}
+
+@supports ((backdrop-filter: blur(20px) saturate(100%)) || (backdrop-filter: blur(20px) saturate(100%))) {
+    .modal {
+        background-color: #11111140;
+        backdrop-filter: blur(20px) saturate(100%);
+        -webkit-backdrop-filter: blur(20px) saturate(100%);
+    }
 }
