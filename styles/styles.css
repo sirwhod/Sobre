@@ -28,7 +28,7 @@ header a:hover{
     color: #50fa7b;
     transition: color 1500ms;
 }
-
+/* Botão Voltar */
 .voltar a {
     color: #50fa7b;
     position: absolute;
@@ -41,7 +41,7 @@ header a:hover{
     color: #50fa7a98;
     transition: color 1000ms;
 }
-
+/* Conteúdo Página Sobre */
 .sobre_img,
 .sobre {
     align-items: center;
@@ -105,7 +105,7 @@ header a:hover{
     margin: 8px auto;
     font-size: 22px;
 }
-
+/* Conteúdo Página de Contatos */
 .contatos {
     text-align: center;
     padding-bottom: 25px;
@@ -125,7 +125,7 @@ header a:hover{
     transition: color 1000ms;
 }
 
-
+/* Links das páginas */
 .links_rodape {
     text-align: center;
     
@@ -155,7 +155,6 @@ header a:hover{
     max-width: 800px;
     margin: 0 auto;
     gap: 20px;
-    
 }
 
 .card {
@@ -165,24 +164,25 @@ header a:hover{
     cursor: pointer;
 }
 
-
 .card_img img {
-    max-height: 144px;
+    max-height: 133.58px;
     width: 100%;
     border-radius: 20px 20px 0 0;
-
 }
 
 .card_conteudo{
     text-align: center;
-    
+}
+
+.card .card_conteudo p {
+    font-size: 22px;
 }
 
 .card_conteudo,
 .card_info{
     font-size: 15px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: #282a36 ;
     padding: 24px;
 }
 
@@ -249,6 +249,8 @@ header a:hover{
     text-align: center;
     padding: 10%;
 }
+
+/* Suporte ao Blur nos Navegadores*/
 
 @supports ((backdrop-filter: blur(20px) saturate(100%)) || (backdrop-filter: blur(20px) saturate(100%))) {
     .modal {
