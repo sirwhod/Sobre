@@ -29,6 +29,19 @@ header a:hover{
     transition: color 1500ms;
 }
 
+.voltar a {
+    color: #50fa7b;
+    position: absolute;
+    left: 120px;
+    top: 25px;
+    cursor: pointer;
+}
+
+.voltar a:hover{
+    color: #50fa7a98;
+    transition: color 1000ms;
+}
+
 .sobre_img,
 .sobre {
     align-items: center;
