@@ -1,3 +1,15 @@
+:root{
+    --color-basica: #ffffff;
+    --color-secundaria: #ffffff98;
+}
+
+/* 
+
+    --color-basica: #50fa7b;
+    --color-secundaria: #50fa7a98;
+
+*/
+
 * {
     padding: 0;
     margin: 0;
@@ -25,12 +37,12 @@ header a {
 }
 
 header a:hover{
-    color: #50fa7b;
+    color: var(--color-basica);
     transition: color 1500ms;
 }
 /* Botão Voltar */
 .voltar a {
-    color: #50fa7b;
+    color: var(--color-basica);
     position: absolute;
     left: 120px;
     top: 25px;
@@ -38,16 +50,28 @@ header a:hover{
 }
 
 .voltar a:hover{
-    color: #50fa7a98;
+    color: var(--color-secundaria);
     transition: color 1000ms;
 }
 /* Conteúdo Página Sobre */
+
+.sobre{
+    margin-top: 5%;
+}
+
 .sobre_img,
 .sobre {
     align-items: center;
     text-align: center;
     padding: 32px;
     color: white;
+}
+
+.sobre_contato {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sobre_img_contato,
@@ -61,14 +85,14 @@ header a:hover{
 .sobre_img img {
     width: 250px;
     border-radius: 50%;
-    border: 5px solid #50fa7b;
+    border: 5px solid var(--color-basica);
     margin-bottom: 32px;
 }
 
 .sobre_img_contato img {
     width: 250px;
     border-radius: 50%;
-    border: 5px solid #50fa7b;
+    border: 5px solid var(--color-basica);
     margin-bottom: 10px;
 }
 
@@ -112,7 +136,7 @@ header a:hover{
 }
 
 .contatos a {
-    color:#50fa7b;
+    color:var(--color-basica);
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
@@ -121,7 +145,7 @@ header a:hover{
 }
 
 .contatos a:hover {
-    color: #50fa7a98;
+    color: var(--color-secundaria);
     transition: color 1000ms;
 }
 
@@ -132,7 +156,7 @@ header a:hover{
 }
 
 .links_rodape a{
-    background-color: #50fa7b ;
+    background-color: var(--color-basica) ;
     border-radius: 25px;
     text-decoration: none;
     color: #282a36;
@@ -144,7 +168,7 @@ header a:hover{
 }
 
 .links_rodape a:hover {
-    background-color: #50fa7a8e ;
+    background-color: var(--color-secundaria) ;
     transition: background-color 1000ms ;
 }
 
@@ -158,8 +182,8 @@ header a:hover{
 }
 
 .card {
-    background-color: #50fa7b;
-    border: 3px solid #50fa7b;
+    background-color: var(--color-basica);
+    border: 3px solid var(--color-basica);
     border-radius: 20px;
     cursor: pointer;
 }
@@ -193,7 +217,7 @@ header a:hover{
 
 .card_link {
     font-size: 13px;
-    background-color: #50fa7b;
+    background-color: var(--color-basica);
     filter: brightness(90%);
     border-radius: 15px;
     text-align: center;
@@ -215,8 +239,8 @@ header a:hover{
     visibility: hidden;
 
     background-color: #11111140;
-    backdrop-filter: blur(20px) saturate(100%);
-    -webkit-backdrop-filter: blur(20px) saturate(100%);
+    backdrop-filter: blur(15px) saturate(100%);
+    -webkit-backdrop-filter: blur(15px) saturate(100%);
 }
 
 .modal {
@@ -225,13 +249,13 @@ header a:hover{
     height: 90%;
     margin: 5vh auto;
     position: relative;
-    border: 5px solid #50fa7b;
+    border: 5px solid var(--color-basica);
     border-radius:25px;
     color: white;
 }
 
 .modal .close-modal {
-    color: #50fa7b;
+    color: var(--color-basica);
     position: absolute;
     right: 16px;
     top: 16px;
@@ -252,10 +276,11 @@ header a:hover{
 
 /* Suporte ao Blur nos Navegadores*/
 
-@supports ((backdrop-filter: blur(20px) saturate(100%)) || (backdrop-filter: blur(20px) saturate(100%))) {
-    .modal {
+@supports ((backdrop-filter: blur(20px) saturate(100%)) || (-webkit-backdrop-filter: blur(20px) saturate(100%))) {
+
+    .modal-overlay{
         background-color: #11111140;
-        backdrop-filter: blur(20px) saturate(100%);
-        -webkit-backdrop-filter: blur(20px) saturate(100%);
+        backdrop-filter: blur(60px) saturate(100%);
+        -webkit-backdrop-filter: blur(60px) saturate(100%);
     }
 }
