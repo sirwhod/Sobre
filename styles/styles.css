@@ -1,6 +1,6 @@
 :root{
-    --color-basica: #ffffff;
-    --color-secundaria: #ffffff98;
+    --color-basica: #50fa7b;
+    --color-secundaria: #50fa7a98;
 }
 
 /* 
@@ -260,6 +260,50 @@ header a:hover{
     right: 16px;
     top: 16px;
     cursor: pointer;
+}
+
+.modal .close-modal a:hover {
+    color: var(--color-secundaria);
+    transition: color 1000ms;
+}
+.modal-content {
+    text-align: center;
+    
+}
+
+.modal-content h1 {
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.modal-content h2 {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.726);
+} 
+
+.modal-content .modal-figma {
+    padding-top: 25px;
+}
+
+.modal-content .modal-figma {
+    padding: 25px;
+}
+
+.modal-content a{
+    background-color: var(--color-basica) ;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #282a36;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 50px;
+    padding: 10px 18px;
+}
+
+.modal-content a:hover {
+    background-color: var(--color-secundaria) ;
+    transition: background-color 1000ms ;
 }
 
 /*--- Modal Ativo ---*/
